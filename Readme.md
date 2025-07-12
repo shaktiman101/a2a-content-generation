@@ -1,1 +1,1 @@
-This repo explores interaction between agents using a2a protocol and adk framework by Google.
+This repo implements a2a protocol to communicate between agents.
