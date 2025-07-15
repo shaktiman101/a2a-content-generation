@@ -5,7 +5,7 @@ import time
 from dotenv import load_dotenv
 import uvicorn
 
-from a2a_blog.src.servers.content_writer_server import create_content_writer_agent_server
+from src.servers.content_writer_server import create_content_writer_agent_server
 from src.servers.content_summarizer_server import create_content_summarizer_agent_server
 from src.servers.orchestrator_server import create_orchestrator_agent_server
 
@@ -53,9 +53,9 @@ def run_agent_in_background(create_agent_function, port, name):
 # Start agent servers with corrected function calls
 print("Starting agent servers...\n")
 
-trending_thread = run_agent_in_background(create_content_writer_agent_server, 10020, "Trending Agent")
-analyzer_thread = run_agent_in_background(create_content_summarizer_agent_server, 10021, "Analyzer Agent")
-host_thread = run_agent_in_background(create_orchestrator_agent_server, 10022, "Host Agent")
+trending_thread = run_agent_in_background(create_content_writer_agent_server, 10020, "Content Writer Agent")
+analyzer_thread = run_agent_in_background(create_content_summarizer_agent_server, 10021, "Content Summarizer Agent")
+host_thread = run_agent_in_background(create_orchestrator_agent_server, 10022, "Orchestrator Agent")
 
 # Wait for servers to start
 time.sleep(3)

@@ -5,7 +5,7 @@ from google.adk.tools import google_search
 # Create the Trending Topics ADK Agent
 content_writer_agent = Agent(
     model="gemini-2.0-flash",
-    name="trending_topics_agent",
+    name="content_writer_agent",
     instruction="""
     You are a content writer. Your job is to search the web for topics or points around user request.,
 

@@ -7,7 +7,7 @@ def create_content_writer_agent_server(host="localhost", port=10020):
     """Create A2A server for Trending Agent using the unified wrapper."""
     return create_agent_a2a_server(
         agent=content_writer_agent,
-        name="Trending Topics Agent",
+        name="Content Writer Agent",
         description="Searches the web for current trending topics from social media",
         skills=[
             AgentSkill(
