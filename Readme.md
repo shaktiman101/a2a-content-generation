@@ -1,1 +1,1 @@
-This repo implements a2a protocol to communicate between agents.
+This repo implements a2a protocol to communicate between agents implemented using any framework.
